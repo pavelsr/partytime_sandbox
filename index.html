@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Инспектор качества машинного распознавания - PartyTime</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<form id="main_form" class="needs-validation">
+						<input class="form-control form-control-lg" type="text" name="vk_group_link" placeholder="https://vk.com/standupspb" value="https://vk.com/standupspb">
+						<button class="btn btn-lg btn-danger" id="vk_group_submit_btn" type="button">Прочесть группу</button>
+						<button class="btn btn-lg btn-warning" id="tomita_submit_btn" type="button">Обработать все посты Томитой</button>
+						<button class="btn btn-lg btn-success" id="calendar_submit_btn" type="button">Добавить всё распознанное в календарь</button>
+					</form>
+				</div>
+			</div>
+			<div id="data_inspection_area">
+				<table class="table table-striped"><tbody></tbody></table>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
